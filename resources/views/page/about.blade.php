@@ -8,7 +8,7 @@
             <div class="col-md-12">
 
                 <h2 class="display-5 fw-bold mt-5">Tentang Aplikasi</h2>
-                <p>Aplikasi ini adalah project latihan praktikum rekayasa web</P>              
+                <p>Aplikasi ini adalah project latihan praktikum rekayasa web</P>/              
             </div>
         </div>
     </div>
