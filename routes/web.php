@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\mahasiswaController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -8,6 +9,8 @@ Route::get('/', function () {
 });
 
 Route::get('/profile', [mahasiswaController::class, 'index']);
+Route::get('/project', [ProjectController::class, 'index'])->name('project.index');
+Route::get('/project/{id}', [ProjectController::class, 'show'])->name('project.show');
 
 Route::get('/about', function () {
     return view('page.about');

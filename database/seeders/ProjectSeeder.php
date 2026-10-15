@@ -42,6 +42,34 @@ class ProjectSeeder extends Seeder
                 'image' => 'project4.jpg',
                 'status' => 'selesai',
             ],
+            [
+                'title' => 'Aplikasi Manajemen Tugas',
+                'description' => 'Aplikasi untuk mengelola tugas dan proyek, memungkinkan pengguna untuk membuat, mengatur, dan melacak tugas mereka.',
+                'teknologi' => 'laravel & bootstrap',
+                'image' => 'project5.jpg',
+                'status' => 'selesai',
+            ],
+            [
+                'title' => 'Sistem Informasi Perpustakaan',
+                'description' => 'Aplikasi untuk mengelola data buku, peminjaman, dan pengembalian di perpustakaan.',
+                'teknologi' => 'laravel & bootstrap',
+                'image' => 'project6.jpg',
+                'status' => 'selesai',
+            ],
+            [
+                'title' => 'Aplikasi Reservasi Hotel',
+                'description' => 'Aplikasi untuk memesan kamar hotel secara online, termasuk fitur pencarian, pemesanan, dan pembayaran.',
+                'teknologi' => 'laravel & bootstrap',
+                'image' => 'project7.jpg',
+                'status' => 'selesai',
+            ],
+            [
+                'title' => 'Sistem Informasi Kesehatan',
+                'description' => 'Aplikasi untuk mengelola data pasien, jadwal dokter, dan rekam medis di fasilitas kesehatan.',
+                'teknologi' => 'laravel & bootstrap',
+                'image' => 'project8.jpg',
+                'status' => 'selesai',
+            ],
         ];
 
         foreach ($projects as $project) {
