@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -116,5 +117,14 @@ class AdminProjectController extends Controller
 
         return redirect()->route('admin.projects.index')
             ->with('success', 'Project berhasil dihapus.');
+    }
+
+    public function cetakPdf()
+    {
+        $projects = Project::all();
+
+        $pdf = Pdf::loadView('admin.projects.pdf', compact('projects'));
+
+        return $pdf->stream('projects.pdf');
     }
 }

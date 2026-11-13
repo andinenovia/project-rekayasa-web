@@ -34,6 +34,9 @@ Route::prefix('admin')
             return view('admin.dashboard');
         })->name('home');
 
+        route::get('/projects/pdf', [AdminProjectController::class, 'cetakPdf'])
+            ->name('projects.pdf');
+
         Route::resource('projects', AdminProjectController::class)
             ->except(['show']);
 

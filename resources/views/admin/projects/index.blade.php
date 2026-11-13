@@ -6,11 +6,15 @@
 @section('content')
     <div class="admin-panel">
         <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
-            <div>
-                <h2 class="h5 fw-bold mb-1">Daftar Project</h2>
+            <h2 class="h5 fw-bold mb-1">Daftar Project</h2>
                 <p class="text-muted mb-0">Semua data di halaman ini terhubung dengan halaman Project website.</p>
+            <header class="Justify-content-end">
+                 <a href="{{ route('admin.projects.create') }}" class="btn btn-primary">+ Tambah Project</a>
+                    <a href="{{ route('admin.projects.pdf') }}" class="btn btn-danger" target="_blank">Cetak PDF</a>
+            </header>
+                
             </div>
-            <a href="{{ route('admin.projects.create') }}" class="btn btn-primary">+ Tambah Project</a>
+           
         </div>
 
         <form method="GET" action="{{ route('admin.projects.index') }}" class="row g-2 mb-3">
